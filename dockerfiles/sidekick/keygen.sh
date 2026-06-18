@@ -21,7 +21,7 @@ rm -fr "$LOC/jenkins_agent_ed" "$LOC/jenkins_agent_ed.pub"
 ssh-keygen -t ed25519 -f "$LOC/jenkins_agent_ed" -N ""
 
 # Set appropriate permissions for private key
-chmod 444 "$LOC/jenkins_agent_ed"
+chmod 600 "$LOC/jenkins_agent_ed"
 
 # Extract public key
 pubkey=$(cat "$LOC/jenkins_agent_ed.pub")

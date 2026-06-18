@@ -20,7 +20,7 @@ jenkins:
       launcher:
         ssh:
           credentialsId: "jenkins-ssh-agent-private-key"
-          host: "desktop-jenkins_agent-1"
+          host: "desktop-jenkins_agent-1-node"
           port: 22
           sshHostKeyVerificationStrategy:
             nonVerifyingKeyVerificationStrategy: {}
